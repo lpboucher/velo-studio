@@ -1,0 +1,122 @@
+#-------------------------------
+# General Site Settings
+
+title: ve|o. Creative Studio
+description_about: The Studio
+description_from: From Montreal
+description_developed: Created in Milan and London
+description_founded: Founded in Amsterdam
+email: veronique@velocreative.studio
+phone: +31 6 1198 5364
+
+# NOTE: The Logo and Background image are defined in the all.sass document.
+
+menu:
+- {name: About,
+    url: '#about'}
+- {name: Services,
+    url: '#services'}
+- {name: Portfolio,
+    url: '#portfolio'}
+- {name: Contact,
+    url: '#contact'}
+#- {name: Brand Inspo,
+#    url: '#brand'}
+#- {name: Blog,
+#    url: '#blog'}
+
+google-fonts:
+  url: "http://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700"
+#-------------------------------
+# SEO Section
+
+# NOTE: Providing SEO information will make this website more searchable on the internet.
+
+seo:
+  description: 'Velo Creative Studio is a digital marketing agency based in Amsterdam.'
+  rel-author: 'Veronique Lagarde'
+  rel-publisher: 've|o. Creative Studio'
+
+#-------------------------------
+# Google Analytics Section
+
+# Analytics helps you understand who visits your website.
+# Learn more at: http://support.google.com/analytics/answer/1008065
+
+# NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
+
+#google-analytics-ua: UA-XXXXXX-X
+
+#-------------------------------
+# About Section
+
+blurb: V e | o is a creative studio based in Amsterdam and founded by two Montrealers. Our main goal is to help brands increase their exposure through visually appealing and solid websites. We also specialize in marketing strategy, concept creation and visual design. Oh and we speak French too.
+
+#-------------------------------
+# Work Section
+
+categories:
+- {name: 'Web Design',
+    id: 'webdesign'}
+- {name: 'Branding',
+    id: 'branding'}
+- {name: 'Marketing Strategy',
+    id: 'marketing-strategy'}
+
+projects:
+- {name: viewfinder.photo,
+    folder: 'portfolio1',
+    path: '../../assets/img/island.jpg',
+    category: 'Web Design',
+    id: }
+- {name: Island Grill,
+    folder: 'portfolio2',
+    path: '../../assets/img/viewfinder.jpg',
+    category: 'Web Design',
+    id: }
+- {name: Royal Lancaster London,
+    folder: 'portfolio3',
+    path: '../../assets/img/RLL.jpg',
+    category: 'Web Design',
+    id: }
+- {name: KWest,
+    folder: 'portfolio4',
+    path: '../../assets/img/lancaster.jpg',
+    category: 'Branding',
+    id: }
+
+services:
+- {name: Web Development,
+    description: Consultation for general look & feel  |  Web Design  |  Web Development & Integration  | Content Management System |  Website Management  | SEO,
+    icon: 'icon-web.html'}
+- {name: Concept Creation,
+    description: Art Direction for photoshoots |  Content Creation for Social Media and website |  Lookbook  |  Visual Styling  |  Concept Creation  |  Content Calendar,
+    icon: 'icon-content.html'}
+- {name: Branding Strategy,
+    description: Create Branding Guidelines  |  Social Media Strategy  |  Copywriting  |  Overall Marketing Strategy Calendar  |  Measuring Campaign Results,
+    icon: 'icon-strategy.html'}
+- {name: Graphic Design,
+    description: Design of Newsletters  |  Digital Brochures  |  Travel Guides  |  Other projects,
+    icon: 'icon-design.html'}
+#-------------------------------
+# Contact Section
+
+social:
+- {name: 'mail',
+    icon: 'icon-mail.html',
+    link: ''}
+- {name: 'facebook',
+    icon: 'icon-facebook.html',
+    link: ''}
+- {name: 'instagram',
+    icon: 'icon-instagram.html',
+    link: ''}
+
+instafeed:
+  clientid: 8329d44b0a85419ab41aa7c49d0b680b
+  userid: 275454434
+  token: 275454434.1677ed0.89e4eeeed41f47fc94b1e95a3165b213
+  #275454434.8329d44.d1c265d444e1438180191076ca616dcf
+
+
+# social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'

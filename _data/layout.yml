@@ -1,0 +1,26 @@
+# Layout settings
+
+animation: ""
+project-number: 3
+
+# Images
+
+logo: ""
+hero: {large: "header-bg_large.jpg",
+    mid: "header-bg_mid.jpg",
+    small: "header-bg_small.jpg",
+    mobile: "header-bg_mobile.jpg"}
+
+contact: "../../assets/img/getintouch.jpg"
+
+# Colors
+
+highlightcolor: "#efb390"
+bordercolor: "#ffffff"
+secondbgcolor: "#EBE9E9"
+darkhover: "#333333"
+lighthover: "#ffffff"
+
+# fonts
+
+mainfont: "'Montserrat', sans-serif"

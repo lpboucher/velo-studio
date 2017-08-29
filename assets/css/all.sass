@@ -1,0 +1,33 @@
+---
+---
+
+@import '1-tools/-tools-dir'
+//------------------------------------------------
+// Transition the project layout variables from the settings file to usable SASS variables
+$project-number: {{ site.data.layout.project-number }}
+
+// Change about content based on browser width
+$description_from: {{ site.data.settings.description_from }}
+$description_developed: {{ site.data.settings.description_developed }}
+$description_founded: {{ site.data.settings.description_founded }}
+
+//------------------------------------------------
+// Transition the image paths from the settings file to usable SASS variables
+//$logo-path: '{{ site.data.layout.logo }}'
+$hero-path: '{{ site.data.layout.hero }}'
+$contact-path: '{{ site.data.layout.contact }}'
+$project_ids: {% for project in site.data.settings.projects %} "{{ project.folder }}", {% endfor %}
+$project_imgs: {% for project in site.data.settings.projects %} "{{ project.path }}", {% endfor %}
+
+//------------------------------------------------
+// Set some colors as sass variables
+$theme-font: {{ site.data.layout.mainfont }}
+
+$highlightcolor: {{ site.data.layout.highlightcolor }}
+$bordercolor: {{ site.data.layout.bordercolor }}
+$secondbgcolor: {{ site.data.layout.secondbgcolor }}
+$darkhover: {{ site.data.layout.darkhover }}
+$lighthover: {{ site.data.layout.lighthover }}
+
+@import '2-base/-base-dir'
+@import '3-sections/-sections-dir'

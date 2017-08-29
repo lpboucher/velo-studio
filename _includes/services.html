@@ -1,0 +1,38 @@
+
+  <div id="services" class="row services">
+    <div class="col-12 text-center">
+      <h2 class="text-uppercase">Our Services</h2>
+    </div>
+    <div class="col-md-10 col-md-offset-1">
+
+      <div id="carousel" class="carousel slide" data-ride="carousel" data-type="multi" data-interval="250000">
+        <div class="carousel-inner">
+          {% for service in site.data.settings.services %} {% if forloop.first %}
+          <div class="item active">
+            {% else %}
+            <div class="item">
+              {% endif %}
+              <div class="carousel-col text-center">
+                    <span class="box"><div class="icon">{% include icons/{{ service.icon }} %}</div>
+                      <h4 class="text-uppercase">{{ service.name }}</h4>
+                      <h6>{{ service.description }}</h6></span>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+
+          <!-- Controls -->
+          <div class="col-12 text-center carousel-control">
+            <a href="#carousel" role="button" data-slide="prev">
+						<span class="control">{% include icons/icon-arrowleft.html %}</span>
+						<span class="sr-only">Previous</span>
+					</a>
+            <a href="#carousel" role="button" data-slide="next">
+						<span class="control">{% include icons/icon-arrowright.html %}</span>
+						<span class="sr-only">Next</span>
+					</a>
+          </div>
+        </div>
+
+      </div>
+    </div>

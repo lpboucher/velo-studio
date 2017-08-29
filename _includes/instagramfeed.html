@@ -1,0 +1,22 @@
+
+<div class="row">
+    <div class="col-12 text-center">
+        <h2 class="text-uppercase">Instagram @velocreative</h2>
+        <div id="instafeed">
+
+        </div>
+        <script type="text/javascript">
+          var userFeed = new Instafeed({
+            get: 'user',
+            userId: '{{ site.data.settings.instafeed.userid }}',
+            clientId: '{{ site.data.settings.instafeed.clientid }}',
+            accessToken: '{{ site.data.settings.instafeed.token }}',
+            resolution: 'thumbnail',
+            sortBy: 'most-recent',
+            limit: 8,
+            links: false
+          });
+          userFeed.run();
+        </script>
+    </div>
+</div>

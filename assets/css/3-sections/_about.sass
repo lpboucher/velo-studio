@@ -1,0 +1,21 @@
+.info-from
+    h5:after
+        font-weight: 400
+        margin: 40px 0
+        color: darken($highlightcolor, 20%)
+        content: "#{$description_from} | #{$description_developed} | #{$description_founded}"
+
+        @media (max-width: 540px)
+            content: "#{$description_from}\A#{$description_developed}\A#{$description_founded}"
+            white-space: pre
+            line-height: 2
+
+    .blurb
+        margin: 0 23%
+        line-height: 2.5em
+
+        @media (max-width: 1240px)
+            margin: 0 15%
+
+        @media (max-width: 540px)
+            margin: 0 5%

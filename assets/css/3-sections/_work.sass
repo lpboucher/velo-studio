@@ -1,0 +1,83 @@
+//.port-btn
+    //padding-top: 25%
+    //padding-bottom: 25%
+    margin: 0
+
+    //span
+        display: inline-block
+        padding: 1em 0
+        border: $bordercolor solid 3px
+        width: 150px
+        background-color: $highlightcolor
+        color: white
+
+@each $id in $project_ids
+    $i: index($project_ids, $id)
+    ##{$id}
+        background-image: url(nth($project_imgs, $i))
+        @extend %background-image
+
+.work .nav > li
+    float: none !important
+    display: inline-block
+
+.project
+    height: 450px
+    position: relative
+
+    .description
+        display: none
+        height: 100%
+        width: 100%
+
+        span
+            text-decoration: underline
+
+    & > *
+        position: absolute
+        font-weight: 400
+        padding: 10px
+
+    .right
+        right: 0
+
+    .left
+        left: 0
+
+    .top
+        top: 0
+
+    .bottom
+        bottom: 0
+
+    &:hover, &:focus
+        p
+            display: none
+
+        .description
+            display: block
+            background-color: transparentize($lighthover, 0.3)
+
+.work-wrapper
+    & > div
+        padding: 0
+
+        &:nth-child(1)
+            padding-right: 20px
+        &:nth-child(2)
+            padding-left: 20px
+        &:nth-child(3)
+            padding-top: 40px
+
+@media (max-width: 992px)
+    .work-wrapper
+        & > div
+            &:nth-child(1), &:nth-child(2), &:nth-child(3)
+                padding: 0
+
+// try with the below loop or maybe a for loop using the variable identifying how far to loop
+//@each $id in $project_ids
+    $i: index($project_ids, $id)
+    ##{$id}
+        background-image: url(nth($project_imgs, $i))
+        @extend %background-image

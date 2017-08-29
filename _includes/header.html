@@ -1,0 +1,26 @@
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="#" id="logo" class="navbar-brand">ve|o. |</a>
+        <ul class="nav navbar-nav social">
+          {% for item in site.data.settings.social %}
+          <li><a href="#">{% include icons/{{ item.icon }} %}</a></li>
+          {% endfor %}
+          <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse navHeaderCollapse navbar-right">
+        <ul class="nav navbar-nav">
+          {% for item in site.data.settings.menu %}
+          <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

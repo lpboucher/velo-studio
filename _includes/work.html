@@ -1,0 +1,73 @@
+<!--{% for category in site.data.settings.categories %}
+
+    {% if forloop.first %}
+        <div class="row work">
+            <div class="col-12 text-center">
+                <h2 class="text-uppercase">Portfolio | Clients</h2>
+                <ul class="nav nav-tabs">
+    {% endif %}
+
+    <li><a href="#{{ category.id }}" data-toggle="tab">{{ category.name }}</a></li>
+
+    {% if forloop.last %}
+        </ul>
+    {% endif %}
+
+{% endfor %}
+
+
+{% for type in site.data.settings.categories %}
+
+    {% if forloop.first %}
+        <div class="tab-content col-md-10 col-md-offset-1">
+            <div class="tab-pane active" id="{{ type.id }}">
+    {% else %}
+        <div class="tab-pane" id="{{ type.id }}">
+    {% endif %}
+
+    {% for project in site.data.settings.projects %}
+
+        {% if project.category contains {{type.name}} %}
+            <div id="{{ project.folder }}" class="col-md-4 text-center background-image">
+                <a href="#"><h6 class="port-btn"><span>{{ project.name }}</span></h6></a>
+            </div>
+        {% endif %}
+
+    {% endfor %}
+    </div>
+{% endfor %}
+        </div>
+    </div>
+</div>-->
+
+<div id="portfolio" class="row work">
+    <div class="col-12 text-center">
+        <h2 class="text-uppercase">Portfolio | Clients</h2>
+    </div>
+    <div class="col-md-8 col-md-offset-2 work-wrapper">
+        <div class="col-md-8">
+            <div id="portfolio1" class="background-image project">
+                <p class="description"><span>Island Grill Restaurant</span><br>
+                                        Web Design & Development | Art Direction for Photoshoots<br>
+                                        islandrestaurant.co.uk</p>
+                <p class="left bottom">Island Grill Restaurant | London</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div id="portfolio2" class="background-image project">
+                <p class="description"><span>Viewfinder.photo</span><br>
+                                        Web Design & Development | Art Direction for Photoshoots | Food Styling<br>
+                                        viewfinder.photo</p>
+                <p class="right top">Viewfinder.photo | London</p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div id="portfolio3" class="background-image project">
+                <p class="description"><span>Royal Lancaster London</span><br>
+                                        Marketing Strategy | Graphic Design | Email Marketing | Photography<br>
+                                        Concept Creation | Creative Direction for Photoshoots</p>
+                <p class="left top">Royal Lancaster London Hotel | London</p>
+            </div>
+        </div>
+    </div>
+</div>
