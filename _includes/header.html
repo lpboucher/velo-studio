@@ -5,7 +5,7 @@
         <a href="#" id="logo" class="navbar-brand">ve|o. |</a>
         <ul class="nav navbar-nav social">
           {% for item in site.data.settings.social %}
-          <li><a href="#">{% include icons/{{ item.icon }} %}</a></li>
+          <li><a href="{{ item.link }}" target="_blank">{% include icons/{{ item.icon }} %}</a></li>
           {% endfor %}
           <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
               <span class="icon-bar"></span>
