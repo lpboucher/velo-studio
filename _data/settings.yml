@@ -3,9 +3,9 @@
 
 title: ve|o. Creative Studio
 description_about: The Studio
-description_from: From Montreal
-description_developed: Created in Milan and London
-description_founded: Founded in Amsterdam
+description_from: 'From Montreal'
+description_developed: 'Created in Milan and London'
+description_founded: 'Founded in Amsterdam'
 email: veronique@velocreative.studio
 phone: +31 6 1198 5364
 
@@ -104,13 +104,13 @@ services:
 social:
 - {name: 'mail',
     icon: 'icon-mail.html',
-    link: ''}
+    link: 'mailto:veronique@velocreative.studio'}
 - {name: 'facebook',
     icon: 'icon-facebook.html',
-    link: ''}
+    link: 'http://www.facebook.com/velocreativestudio'}
 - {name: 'instagram',
     icon: 'icon-instagram.html',
-    link: ''}
+    link: 'http://www.instagram.com/velocreative'}
 
 instafeed:
   clientid: 8329d44b0a85419ab41aa7c49d0b680b
