@@ -87,7 +87,7 @@ projects:
 
 services:
 - {name: Web Development,
-    description: Consultation for general look & feel  |  Web Design  |  Web Development & Integration  | Content Management System |  Website Management  | SEO,
+    description: Consultation for general look & feel  |  Web Design  |  Web Development & Integration  | Content Management System |  Website Management,
     icon: 'icon-web.html'}
 - {name: Concept Creation,
     description: Art Direction for photoshoots |  Content Creation for Social Media and website |  Lookbook  |  Visual Styling  |  Concept Creation  |  Content Calendar,
