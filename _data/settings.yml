@@ -6,7 +6,7 @@ description_about: The Studio
 description_from: 'From Montreal'
 description_developed: 'Created in Milan and London'
 description_founded: 'Founded in Amsterdam'
-email: veronique@velocreative.studio
+email: vl@velocreative.studio
 phone: +31 6 1198 5364
 
 # NOTE: The Logo and Background image are defined in the all.sass document.
@@ -104,7 +104,7 @@ services:
 social:
 - {name: 'mail',
     icon: 'icon-mail.html',
-    link: 'mailto:veronique@velocreative.studio'}
+    link: 'mailto:vl@velocreative.studio'}
 - {name: 'facebook',
     icon: 'icon-facebook.html',
     link: 'http://www.facebook.com/velocreativestudio'}
